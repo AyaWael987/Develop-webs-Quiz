@@ -1,0 +1,218 @@
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(13, 13, 13);
+}
+/*body home*/
+/* nav */
+.main-nav{
+    padding:15px 0px ;
+    background-color: white;
+    height: 100vh;
+    width: 80px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main-nav img{
+    width:50px;
+}
+.nav-icon i{
+    font-size: 50px;
+    border: 3px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* list of nav*/
+.contain-side{
+    display: flex;
+    position: fixed;
+    left:-200px;
+    z-index: 1;
+
+}
+.list{
+    padding: 10px 0px;
+    color: white;
+    display: flex;
+    height: 100vh;
+    background-color:rgb(13, 13, 13);
+    width:200px;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.list ul{
+    list-style: none;
+    font-size: 20px;
+}
+.list ul li{
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-weight: 400;
+    padding: 20px 0px;
+}
+.list .list-icons{
+    padding-left: 30px;
+}
+
+/* search */
+
+.body-search{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.body-search input{
+    height: 40px;
+    width:40%;
+}
+/* ingredints */
+.ing-contain {
+    position: relative;
+    overflow: hidden;
+}
+.img-cont img{
+    background-color: bisque;
+}
+.layer{
+    top:300px;
+    height: 100%;
+    position: absolute;
+    background-color:rgb(200, 198, 198,0.5);
+    transition: all 2s 0.2s ;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+.ing-cont:hover .layer{
+    top:0px;
+}
+
+.layer p{
+    font-size: 15px;
+}
+
+/*area*/
+.area-icon i{
+    padding: 10px;
+    font-size:90px;
+    color: white;
+}
+.area-icon h2{
+    color: white;
+}
+/*cat*/
+.cat-cont i{
+    color: #fff;
+    padding: 10px;
+    font-size:70px 
+}
+.cat-cont{
+    color: white;
+    overflow: hidden;
+}
+.cat-cont p{
+    height:35px;
+}
+/*contact*/
+.body-contact{
+    background-color: rgb(13, 13, 13);
+    width:70%;
+    margin: 230px auto;
+}
+
+.body-contact input{
+    width:95%;
+    margin:10px 0px;
+    border-radius: 5px;
+    height: 40px;
+}
+/*inner*/
+.inner-cont{
+    color: white;
+}
+.inner-cont h3{
+    font-size: 35px;
+    font-weight: 400;
+}
+.side h3{
+    color: white;
+    font-weight: 600;
+    font-size: 40px;
+}
+.inner-cont .inner-bold{
+    font-weight: 600;
+    font-size: 30px;
+}
+/*louder*/
+#louding{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top:300px;
+    z-index: 4;
+}
+.loader {
+    color: #fff;
+    font-size: 10px;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    position: relative;
+    text-indent: -9999em;
+    animation: mulShdSpin 1.3s infinite linear;
+    transform: translateZ(0);
+  }
+  
+  @keyframes mulShdSpin {
+    0%,
+    100% {
+      box-shadow: 0 -3em 0 0.2em, 
+      2em -2em 0 0em, 3em 0 0 -1em, 
+      2em 2em 0 -1em, 0 3em 0 -1em, 
+      -2em 2em 0 -1em, -3em 0 0 -1em, 
+      -2em -2em 0 0;
+    }
+    12.5% {
+      box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 
+      3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, 
+      -2em 2em 0 -1em, -3em 0 0 -1em, 
+      -2em -2em 0 -1em;
+    }
+    25% {
+      box-shadow: 0 -3em 0 -0.5em, 
+      2em -2em 0 0, 3em 0 0 0.2em, 
+      2em 2em 0 0, 0 3em 0 -1em, 
+      -2em 2em 0 -1em, -3em 0 0 -1em, 
+      -2em -2em 0 -1em;
+    }
+    37.5% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+       3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, 
+       -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    50% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+       3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, 
+       -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    62.5% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+       3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, 
+       -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+    }
+    75% {
+      box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 
+      3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, 
+      -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+    }
+    87.5% {
+      box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 
+      3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, 
+      -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+    }
+  }
+    
